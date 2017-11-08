@@ -170,6 +170,9 @@ _loadImages(pics, function() {
 
     $(".ld_page").hide();
     $(".scroll-list").show();
+
+    $(".btn_down").show();
+    // $(".btn_up").show();
 });
 
 /** 滚动页面 **/
@@ -231,6 +234,16 @@ function pageShow(ind) {
         "-webkit-transform": "translateY(" + scrollTop + ")"
     })
     cache.mod.removeClass("play").eq(ind).addClass("play");
+    if (cache.ind == 0) {
+        $(".btn_up").hide();
+        // $(".btn_down").show();
+    } else if (cache.ind == 36) {
+        // $(".btn_up").show();
+        $(".btn_down").hide();
+    } else {
+        $(".btn_up").show();
+        $(".btn_down").show();
+    }
 }
 
 $("html").touchwipe({
@@ -241,6 +254,19 @@ $("html").touchwipe({
             if (scrollIng) {
                 cache.ind--;
                 pageShow(cache.ind);
+
+                var n = $(".scroll-list .slide").index($(".slide .play"));
+                console.log(n, cache.ind);
+                // if (cache.ind == 0) {
+                //     $(".btn_up").hide();
+                //     // $(".btn_down").show();
+                // } else if (cache.ind == 36) {
+                //     // $(".btn_up").show();
+                //     $(".btn_down").hide();
+                // } else {
+                //     // $(".btn_up").show();
+                //     $(".btn_down").show();
+                // }
             } else {
                 console.log("不滚动");
             }
@@ -253,6 +279,20 @@ $("html").touchwipe({
             if (scrollIng) {
                 cache.ind++;
                 pageShow(cache.ind);
+
+                var n = $(".scroll-list .slide").index($(".slide .play"));
+                console.log(n, cache.ind);
+
+                // if (cache.ind == 0) {
+                //     $(".btn_up").hide();
+                //     $(".btn_down").show();
+                // } else if (cache.ind == 36) {
+                //     $(".btn_up").show();
+                //     $(".btn_down").hide();
+                // } else {
+                //     $(".btn_up").show();
+                //     $(".btn_down").show();
+                // }
             } else {
                 console.log("不滚动");
             }
