@@ -146,8 +146,8 @@ _loadImages(pics, function() {
 
     $(".ld_page").hide();
     $(".scroll-list").show();
-
     $(".btn_down").show();
+    
 });
 
 /** 滚动页面 **/

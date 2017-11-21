@@ -501,28 +501,38 @@ html,
 
 .ld_page .ld_bg {
   position: absolute;
-  left: 5rem;
-  top: 50%;
-  margin-top: -1.75rem;
+  top: 10rem;
+  left: 50%;
+  margin-left: -5.8rem;
   width: 11.6rem;
   height: 3.5rem;
   background-image: url(../images/fu_logo3.jpg);
   background-size: 100% 100%;
-  -webkit-transform: rotate(90deg);
 }
 
 .ld_page .ld_num {
   position: absolute;
-  left: -1.25rem;
-  top: 50%;
-  margin-top: -0.5rem;
+  top: 13.75rem;
+  left: 50%;
+  margin-left: -9.375rem;
   width: 18.75rem;
   height: 1rem;
   color: black;
   font-size: 1rem;
   font-weight: 900;
   text-align: center;
-  -webkit-transform: rotate(90deg);
+}
+
+.ld_page .ld_info {
+  position: absolute;
+  top: 17.5rem;
+  left: 50%;
+  margin-left: -9.375rem;
+  width: 18.75rem;
+  height: 1rem;
+  color: #9b9b9b;
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 .wrapper {

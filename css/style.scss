@@ -100,18 +100,26 @@ html,
 
 .ld_page {
     .ld_bg {
-        @include CenterH(null, 200, 464, 140);
+        @include Center(null, 400, 464, 140);
         background-image: url(../images/fu_logo3.jpg);
         background-size: 100% 100%;
-        -webkit-transform: rotate(90deg);
+        // -webkit-transform: rotate(90deg);
     }
     .ld_num {
-        @include CenterH(null, -50, 750, 40);
+        @include Center(null, 550, 750, 40);
         color: black;
         font-size: 1rem;
         font-weight: 900;
         text-align: center;
-        -webkit-transform: rotate(90deg);
+        // -webkit-transform: rotate(90deg);
+    }
+    .ld_info {
+        @include Center(null, 700, 750, 40);
+        color: rgb(155, 155, 155);
+        font-size: 0.7rem;
+        // font-weight: 900;
+        text-align: center;
+        // -webkit-transform: rotate(90deg);
     }
 }
 
