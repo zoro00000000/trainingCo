@@ -127,2352 +127,436 @@ html,
 .scroll-list {
     // page 1
     .page1 {
-        // box-sizing: border-box;
-        // width: 100%;
-        // height: 100%;
-        // border: 2px solid #000000;
-        .page_inner {
-            .p1_bg {
-                @include CenterH(null, null, 325, 1206);
-                right: 0px;
-                background-image: url(../images/p1_bg.jpg);
-                background-size: 100% 100%;
-                background-position: center center;
-            }
-            .p1_title {
-                p:nth-child(1) {
-                    font-size: 2rem;
-                    font-weight: 900;
-                    color: #000000;
-                    position: absolute;
-                    top: 10rem;
-                    -webkit-transform: rotate(90deg);
-                }
-                P:nth-child(2) {
-                    font-size: 1rem;
-                    color: #000000;
-                    position: absolute;
-                    top: 10rem;
-                    // left: -1rem;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, 0, 190, 50);
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page1_inner {
+            background: url(../images/page1.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 2
     .page2 {
-        // box-sizing: border-box;
-        // width: 100%;
-        // height: 100%;
-        // border: 2px solid #000000;
-        .page_inner {
-            .p2_title {
-                p:nth-child(1) {
-                    font-size: 3rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 8rem;
-                    top: 5rem;
-                    -webkit-transform: rotate(90deg);
-                }
-                p:nth-child(2) {
-                    font-size: 0.5rem;
-                    // font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 7rem;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p2_menus {
-                .menu_1 {
-                    .menu_t1 {
-                        @include Offset(p2_num, 500, 500, 104, 124);
-                        // right: 0;
-                        p {
-                            font-size: 1rem;
-                            font-weight: 900;
-                            color: rgb(25, 56, 93);
-                            position: absolute;
-                            left: 0.75rem;
-                            top: 0.75rem;
-                        }
-                        // -webkit-transform: rotate(90deg);
-                    }
-                    p {
-                        font-size: 1rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                        position: absolute;
-                        left: 11.5rem;
-                        top: 17.5rem;
-                        -webkit-transform: rotate(90deg);
-                    }
-                }
-                .menu_2 {
-                    .menu_t2 {
-                        @include Offset(p2_num, 500, 320, 104, 124);
-                        // right: 0;
-                        p {
-                            font-size: 1rem;
-                            font-weight: 900;
-                            color: rgb(25, 56, 93);
-                            position: absolute;
-                            left: 0.75rem;
-                            top: 0.75rem;
-                        }
-                        // -webkit-transform: rotate(90deg);
-                    }
-                    p {
-                        font-size: 1rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                        position: absolute;
-                        left: 7rem;
-                        top: 17.5rem;
-                        -webkit-transform: rotate(90deg);
-                    }
-                }
-                .menu_3 {
-                    .menu_t3 {
-                        @include Offset(p2_num, 500, 140, 104, 124);
-                        // right: 0;
-                        p {
-                            font-size: 1rem;
-                            font-weight: 900;
-                            color: rgb(25, 56, 93);
-                            position: absolute;
-                            left: 0.75rem;
-                            top: 0.75rem;
-                        }
-                        // -webkit-transform: rotate(90deg);
-                    }
-                    p {
-                        font-size: 1rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                        position: absolute;
-                        left: 2.5rem;
-                        top: 17.5rem;
-                        -webkit-transform: rotate(90deg);
-                    }
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page2_inner {
+            background: url(../images/page2.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 3
     .page3 {
-        // box-sizing: border-box;
-        // width: 100%;
-        // height: 100%;
-        // border: 2px solid #000000;
-        .page_inner {
-            .p3_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 12rem;
-                    top: 4rem;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p3_text {
-                position: absolute;
-                left: -2rem;
-                top: 6rem;
-                width: 20rem;
-                height: auto;
-                // background-color: #446699;
-                // overflow: scroll;
-                // -webkit-overflow-scrolling: touch;
-                p {
-                    font-size: 0.7rem;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .dsz_info {
-                .dongshizhang {
-                    @include Offset(null, null, null, 225, 300);
-                    right: 6rem;
-                    bottom: 1rem;
-                    background-image: url(../images/dsz.jpg);
-                    background-size: 100% 100%;
-                    -webkit-transform: rotate(90deg);
-                }
-                .dsz_autograph {
-                    @include Offset(null, null, null, 225, 94);
-                    right: 11rem;
-                    bottom: 3.5rem;
-                    background-image: url(../images/dsz_autograph.jpg);
-                    background-size: 100% 100%;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-        }
-    }
-    // page 3-2
-    .page3_2 {
-        // box-sizing: border-box;
-        // width: 100%;
-        // height: 100%;
-        // border: 2px solid #000000;
-        .page_inner {
-            .p3_2_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 12rem;
-                    top: 4rem;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p3_2_text {
-                position: absolute;
-                left: -2rem;
-                top: 6rem;
-                width: 20rem;
-                height: auto;
-                // background-color: #446699;
-                // overflow: scroll;
-                // -webkit-overflow-scrolling: touch;
-                p {
-                    font-size: 0.7rem;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .dsz_info {
-                .dongshizhang {
-                    @include Offset(null, null, null, 225, 300);
-                    right: 6rem;
-                    bottom: 1rem;
-                    background-image: url(../images/dsz.jpg);
-                    background-size: 100% 100%;
-                    -webkit-transform: rotate(90deg);
-                }
-                .dsz_autograph {
-                    @include Offset(null, null, null, 225, 94);
-                    right: 11rem;
-                    bottom: 3.5rem;
-                    background-image: url(../images/dsz_autograph.jpg);
-                    background-size: 100% 100%;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page3_inner {
+            background: url(../images/page3.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 4
     .page4 {
-        .page_inner {
-            .p4_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 12rem;
-                    top: 4rem;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p4_img {
-                @include Offset(null, null, null, 366, 330);
-                left: 3rem;
-                top: 4rem;
-                background-image: url(../images/p4_img.jpg);
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-            .p4_menu {
-                position: absolute;
-                top: 16rem;
-                left: 1rem;
-                -webkit-transform: rotate(90deg);
-                li {
-                    display: block;
-                    width: 13rem;
-                    height: 2rem;
-                    background-color: rgb(208, 82, 89);
-                    text-align: center;
-                    border-radius: 4px;
-                    p {
-                        line-height: 2rem;
-                        color: #ffffff;
-                    }
-                    margin-top: 0.6rem;
-                }
-                li:nth-child(1) {
-                    margin-top: 0rem;
-                }
-                li:nth-child(2) {}
-                li:nth-child(3) {}
-                li:nth-child(4) {}
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page4_inner {
+            background: url(../images/page4.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 5
     .page5 {
-        .page_inner {
-            .p5_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p5_text {
-                position: absolute;
-                left: 15rem;
-                top: 2.6rem;
-                width: auto;
-                height: auto;
-                .star {
-                    @include Offset(null, 100, 50, 58, 48);
-                    background-image: url(../images/p5_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .text_header {
-                    position: absolute;
-                    left: 3rem;
-                    top: 2.6rem;
-                    width: 12rem;
-                    height: 2rem;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.8rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                .text_info {
-                    position: absolute;
-                    left: 1rem;
-                    top: 5.6rem;
-                    width: 12rem;
-                    height: auto;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.5rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p5_br {
-                box-sizing: content-box;
-                padding: 0.5rem;
-                border: 0.2rem solid rgb(25, 56, 93);
-                border-radius: 0.5rem;
-                width: 4rem;
-                height: 4rem;
-                position: absolute;
-                top: 18rem;
-                left: 6rem;
-                p {
-                    font-size: 2rem;
-                    font-weight: 900;
-                    line-height: 2rem;
-                    color: rgb(196, 0, 12);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-        }
-    }
-    // page 5
-    .page5_2 {
-        .page_inner {
-            .p5_2_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p5_2_text {
-                position: absolute;
-                left: 15rem;
-                top: 2.6rem;
-                width: auto;
-                height: auto;
-                .star {
-                    @include Offset(null, 100, 50, 58, 48);
-                    background-image: url(../images/p5_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .text_header {
-                    position: absolute;
-                    left: 3rem;
-                    top: 2.6rem;
-                    width: 12rem;
-                    height: 2rem;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.8rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                .text_info {
-                    position: absolute;
-                    left: 1rem;
-                    top: 5.6rem;
-                    width: 12rem;
-                    height: auto;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.5rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p5_2_br {
-                box-sizing: content-box;
-                padding: 0.5rem;
-                border: 0.2rem solid rgb(241, 76, 88);
-                background-color: rgb(241, 76, 88);
-                border-radius: 0.5rem;
-                width: 4rem;
-                height: 4rem;
-                position: absolute;
-                top: 18rem;
-                left: 6rem;
-                p {
-                    font-size: 2rem;
-                    font-weight: 900;
-                    line-height: 2rem;
-                    color: #ffffff;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-        }
-    }
-    // page 5
-    .page5_3 {
-        .page_inner {
-            .p5_3_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p5_3_text {
-                position: absolute;
-                left: 15rem;
-                top: 2.6rem;
-                width: auto;
-                height: auto;
-                .star {
-                    @include Offset(null, 100, 50, 58, 48);
-                    background-image: url(../images/p5_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .text_header {
-                    position: absolute;
-                    left: 3rem;
-                    top: 2.6rem;
-                    width: 12rem;
-                    height: 2rem;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.8rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                .text_info {
-                    position: absolute;
-                    left: 1rem;
-                    top: 5.6rem;
-                    width: 12rem;
-                    height: auto;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.5rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p5_3_br {
-                box-sizing: content-box;
-                padding: 0.5rem;
-                border: 0.2rem solid rgb(241, 76, 88);
-                background-color: rgb(241, 76, 88);
-                border-radius: 0.5rem;
-                width: 4rem;
-                height: 4rem;
-                position: absolute;
-                top: 18rem;
-                left: 6rem;
-                p {
-                    font-size: 2rem;
-                    font-weight: 900;
-                    line-height: 2rem;
-                    color: #ffffff;
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-        }
-    }
-    // page 5
-    .page5_4 {
-        .page_inner {
-            .p5_4_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p5_4_text {
-                position: absolute;
-                left: 15rem;
-                top: 2.6rem;
-                width: auto;
-                height: auto;
-                .star {
-                    @include Offset(null, 100, 50, 58, 48);
-                    background-image: url(../images/p5_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .text_header {
-                    position: absolute;
-                    left: 3rem;
-                    top: 2.6rem;
-                    width: 12rem;
-                    height: 2rem;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.8rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                .text_info {
-                    position: absolute;
-                    left: 1rem;
-                    top: 5.6rem;
-                    width: 12rem;
-                    height: auto;
-                    // background-color: #446699;
-                    // overflow-y: scroll;
-                    p {
-                        font-size: 0.5rem;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p5_4_br {
-                box-sizing: content-box;
-                padding: 0.5rem;
-                border: 0.2rem solid rgb(25, 56, 93);
-                border-radius: 0.5rem;
-                width: 4rem;
-                height: 4rem;
-                position: absolute;
-                top: 18rem;
-                left: 6rem;
-                p {
-                    font-size: 2rem;
-                    font-weight: 900;
-                    line-height: 2rem;
-                    color: rgb(196, 0, 12);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page5_inner {
+            background: url(../images/page5.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 6
     .page6 {
-        .page_inner {
-            .p6_bg {
-                // @include Middle(null, 750, 1200);
-                background-image: url(../images/p5_img.jpg);
-                background-size: 100% 100%;
-                width: 100%;
-                height: 100%;
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page6_inner {
+            background: url(../images/page6.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 7
     .page7 {
-        .page_inner {
-            .p7_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p7_text {
-                position: absolute;
-                left: -2rem;
-                top: 10rem;
-                width: 20rem;
-                height: auto;
-                // background-color: #446699;
-                // overflow-y: scroll;
-                p {
-                    font-size: 0.8rem;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p7_bg {
-                // @include Middle(null, 750, 1200);
-                background-image: url(../images/p6_bg.jpg);
-                background-size: 100% 100%;
-                width: 100%;
-                height: 100%;
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fh_logo2.png);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page7_inner {
+            background: url(../images/page7.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 8
     .page8 {
-        .page_inner {
-            .p8_bg {
-                // @include Middle(null, 750, 1200);
-                background-image: url(../images/p7_bg.jpg);
-                background-size: 100% 100%;
-                width: 100%;
-                height: 100%;
-            }
-            .p8_text {
-                position: absolute;
-                left: 5rem;
-                top: 6.6rem;
-                width: 4rem;
-                height: 8rem;
-                // background-color: #446699;
-                // overflow-y: scroll;
-                p {
-                    font-size: 2.8rem;
-                    color: #ffffff;
-                }
-                p:nth-child(1) {
-                    -webkit-transform: rotate(90deg);
-                }
-                p:nth-child(2) {
-                    position: absolute;
-                    left: 0rem;
-                    top: 6.6rem;
-                    -webkit-transform: rotate(150deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fh_logo2.png);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page8_inner {
+            background: url(../images/page8.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 9
     .page9 {
-        .page_inner {
-            .p9_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p9_bg {
-                // @include Middle(null, 750, 1200);
-                background-image: url(../images/p8_bg.jpg);
-                background-size: 100% 100%;
-                width: 100%;
-                height: 100%;
-            }
-            .p9_text {
-                position: absolute;
-                top: 12rem;
-                left: 0rem;
-                width: 16rem;
-                height: auto;
-                // 占时不添加star
-                // .star {
-                //     @include Offset(null, null, null, 118, 102);
-                //     background-image: url(../images/p6_star.jpg);
-                //     background-size: 100% 100%;
-                // }
-                p {
-                    font-size: 0.8rem;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page9_inner {
+            background: url(../images/page9.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 10
     .page10 {
-        .page_inner {
-            .p10_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p10_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p10_star {
-                    @include Offset(null, 100, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page10_inner {
+            background: url(../images/page10.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 11
     .page11 {
-        .page_inner {
-            .p11_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p11_bg {
-                @include CenterH(null, 0, 664, 1206);
-                background-image: url(../images/p10_bg.jpg);
-                background-size: 100% 100%;
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page11_inner {
+            background: url(../images/page11.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 12
     .page12 {
-        .page_inner {
-            .p12_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p12_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p12_star {
-                    @include Offset(null, 100, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page12_inner {
+            background: url(../images/page12.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 13
     .page13 {
-        .page_inner {
-            .p13_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p13_bg {
-                // @include Middle(null, 750, 1206);
-                background-image: url(../images/p12_bg.jpg);
-                background-size: 100% 100%;
-                width: 100%;
-                height: 100%;
-            }
-            .p13_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p13_star {
-                    @include Offset(p2_star, 100, null, 116, 100);
-                    // background-image: url(../images/p2_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.1rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                        span {
-                            color: rgb(196, 0, 12);
-                        }
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p13_footer {
-                position: absolute;
-                bottom: 11rem;
-                right: 6rem;
-                width: 21rem;
-                p {
-                    font-size: 0.4rem;
-                    // font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page13_inner {
+            background: url(../images/page13.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 14
     .page14 {
-        .page_inner {
-            .p14_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p14_bg {
-                @include CenterH(null, 50, 350, 404);
-                background-image: url(../images/p13_bg.jpg);
-                background-size: 100% 100%;
-            }
-            .p14_text {
-                position: absolute;
-                top: 15rem;
-                right: 1rem;
-                // width: 21rem;
-                p {
-                    font-size: 1rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p14_title {
-                position: absolute;
-                top: 14rem;
-                right: 7rem;
-                p {
-                    font-size: 1rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p14_text1 {
-                position: absolute;
-                top: 3rem;
-                right: 10rem;
-                // width: 21rem;
-                p:nth-child(1) {
-                    font-size: 1rem;
-                    font-weight: 900;
-                }
-                p {
-                    font-size: 0.8rem;
-                    // font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    span {
-                        color: rgb(196, 0, 12);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p14_text2 {
-                position: absolute;
-                top: 20rem;
-                right: 9rem;
-                // width: 21rem;
-                p:nth-child(1) {
-                    font-size: 1rem;
-                    font-weight: 900;
-                }
-                p {
-                    font-size: 0.5rem;
-                    // font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    span {
-                        color: rgb(196, 0, 12);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page14_inner {
+            background: url(../images/page14.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
-    // page15
+    // page 15
     .page15 {
-        .page_inner {
-            .p15_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p15_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p15_star {
-                    @include Offset(null, 100, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page15_inner {
+            background: url(../images/page15.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page 16
     .page16 {
-        .page_inner {
-            .p16_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p16_bg {
-                @include CenterH(null, 50, 350, 404);
-                background-image: url(../images/p13_bg.jpg);
-                background-size: 100% 100%;
-            }
-            .p16_text {
-                position: absolute;
-                top: 14rem;
-                right: 3rem;
-                // width: 21rem;
-                p {
-                    font-size: 1rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    span {
-                        color: rgb(196, 0, 12);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p16_title {
-                position: absolute;
-                top: 14rem;
-                right: 7rem;
-                p {
-                    font-size: 1rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p16_text1 {
-                position: absolute;
-                top: 2rem;
-                right: 8rem;
-                width: 8rem;
-                p {
-                    font-size: 0.8rem;
-                    // font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    span {
-                        color: rgb(196, 0, 12);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .p16_text2 {
-                position: absolute;
-                top: 20rem;
-                right: 7rem;
-                width: 8rem;
-                p {
-                    font-size: 0.8rem;
-                    // font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    span {
-                        color: rgb(196, 0, 12);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page16_inner {
+            background: url(../images/page16.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
-    // page17
+    // page 17
     .page17 {
-        .page_inner {
-            .p17_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p17_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p17_star {
-                    @include Offset(null, 100, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page17_inner {
+            background: url(../images/page17.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
-    // page18
+    // page 18
     .page18 {
-        .page_inner {
-            .p18_bg {
-                // @include CenterH(null, null, 750, 1206);
-                background-image: url(../images/p17_bg.jpg);
-                background-size: 100% 100%;
-                width: 100%;
-                height: 100%;
-            }
-            .p18_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 7rem;
-                    top: 9rem;
-                    width: 25rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p18_text {
-                position: absolute;
-                top: 10rem;
-                left: -3rem;
-                p {
-                    font-size: 0.7rem;
-                    color: rgb(25, 56, 93);
-                }
-                -webkit-transform: rotate(90deg);
-            }
+        .page18_inner {
+            background: url(../images/page18.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page19
     .page19 {
-        .page_inner {
-            .p19_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p19_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p19_star {
-                    @include Offset(null, 40, -40, 476, 446);
-                    background-image: url(../images/p18_bg.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 5rem;
-                    left: 11rem;
-                    width: auto;
-                    height: auto;
-                    p {
-                        font-size: 2rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page19_inner {
+            background: url(../images/page19.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
-    // page20
+    // page 20
     .page20 {
-        .page_inner {
-            .p20_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p20_title {
-                position: absolute;
-                left: -2rem;
-                top: 14rem;
-                // width: 22rem;
-                p:nth-child(1) {
-                    color: rgb(196, 0, 12);
-                }
-                p:nth-child(2) {
-                    margin-top: 1rem;
-                }
-                p {
-                    font-size: 1rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page20_inner {
+            background: url(../images/page20.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page21
     .page21 {
-        .page_inner {
-            .p21_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p21_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p21_star {
-                    @include Offset(null, 160, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 3rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page21_inner {
+            background: url(../images/page21.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page22
     .page22 {
-        .page_inner {
-            .p22_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p22_text {
-                position: absolute;
-                top: 10rem;
-                left: -3rem;
-                width: 20rem;
-                p {
-                    font-size: 0.9rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(1) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                }
-                p:nth-child(2) {
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page22_inner {
+            background: url(../images/page22.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page23
     .page23 {
-        .page_inner {
-            .p23_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p23_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p23_star {
-                    @include Offset(null, 160, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 3rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page23_inner {
+            background: url(../images/page23.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page24
     .page24 {
-        .page_inner {
-            .p24_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    // width: 20rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p24_text {
-                position: absolute;
-                top: 10rem;
-                left: -3.5rem;
-                width: 20rem;
-                p {
-                    font-size: 0.9rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(1) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 1rem;
-                }
-                p:nth-child(2) {
-                    margin-top: 1rem;
-                }
-                p:nth-child(6) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page24_inner {
+            background: url(../images/page24.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page25
     .page25 {
-        .page_inner {
-            .p25_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p25_text1 {
-                position: absolute;
-                top: 1rem;
-                left: 1rem;
-                .info {
-                    position: absolute;
-                    left: 5rem;
-                    top: 3rem;
-                    width: 5rem;
-                    height: auto;
-                    text-align: center;
-                    p {
-                        font-size: 0.8rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p25_img1 {
-                    @include Offset(null, null, null, 226, 300);
-                    background-image: url(../images/p25_img1.jpg);
-                    background-size: 100% 100%;
-                }
-            }
-            .p25_text2 {
-                position: absolute;
-                top: 8rem;
-                left: 2rem;
-                .info {
-                    position: absolute;
-                    left: 5rem;
-                    top: 3rem;
-                    width: 5rem;
-                    height: auto;
-                    text-align: center;
-                    p {
-                        font-size: 0.8rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p25_img2 {
-                    @include Offset(null, null, null, 226, 300);
-                    background-image: url(../images/p25_img3.jpg);
-                    background-size: 100% 100%;
-                }
-            }
-            .p25_text3 {
-                position: absolute;
-                top: 15rem;
-                left: 3rem;
-                .info {
-                    position: absolute;
-                    left: 5rem;
-                    top: 3rem;
-                    width: 5rem;
-                    height: auto;
-                    text-align: center;
-                    p {
-                        font-size: 0.8rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p25_img3 {
-                    @include Offset(null, null, null, 226, 300);
-                    background-image: url(../images/p25_img2.jpg);
-                    background-size: 100% 100%;
-                }
-            }
-            .p25_text4 {
-                position: absolute;
-                top: 22rem;
-                left: 4rem;
-                .info {
-                    position: absolute;
-                    left: 5rem;
-                    top: 3rem;
-                    width: 5rem;
-                    height: auto;
-                    text-align: center;
-                    p {
-                        font-size: 0.8rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p25_img4 {
-                    @include Offset(null, null, null, 226, 300);
-                    background-image: url(../images/p25_img4.jpg);
-                    background-size: 100% 100%;
-                }
-            }
-            .p25_text5 {
-                position: absolute;
-                left: -1rem;
-                top: 22rem;
-                width: auto;
-                height: auto;
-                text-align: center;
-                p {
-                    font-size: 1rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page25_inner {
+            background: url(../images/page25.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page26
     .page26 {
-        .page_inner {
-            .p26_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p26_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p26_star {
-                    @include Offset(null, 100, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page26_inner {
+            background: url(../images/page26.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page27
     .page27 {
-        .page_inner {
-            .p27_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p27_img1 {
-                @include Offset(null, 40, 220, 280, 280);
-                background-image: url(../images/p27_img1.jpg);
-                background-size: 100% 100%;
-            }
-            .p27_text {
-                @include CenterH(null, 60, 445, 707);
-                background-image: url(../images/p27_img3.jpg);
-                background-size: 100% 100%;
-                .p27_ball1 {
-                    @include Offset(p27_img2, 72, 102, 42, 42);
-                    // background-image: url(../images/p27_img2.jpg);
-                    background-size: 100% 100%;
-                }
-                .p27_text1 {
-                    position: absolute;
-                    top: 3rem;
-                    left: -1rem;
-                    width: auto;
-                    height: auto;
-                    p {
-                        font-size: 0.7rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p27_ball2 {
-                    @include Offset(p27_img2, 152, 160, 62, 62);
-                    // background-image: url(../images/p27_img2.jpg);
-                    background-size: 100% 100%;
-                }
-                .p27_text2 {
-                    position: absolute;
-                    top: 7rem;
-                    left: 1rem;
-                    width: auto;
-                    height: auto;
-                    p {
-                        font-size: 0.7rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p27_ball3 {
-                    @include Offset(p27_img2, 280, 220, 82, 82);
-                    // background-image: url(../images/p27_img2.jpg);
-                    background-size: 100% 100%;
-                }
-                .p27_text3 {
-                    position: absolute;
-                    top: 11rem;
-                    left: 3rem;
-                    width: auto;
-                    height: auto;
-                    p {
-                        font-size: 0.7rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-                .p27_ball4 {
-                    @include Offset(p27_img2, 440, 260, 102, 102);
-                    // background-image: url(../images/p27_img2.jpg);
-                    background-size: 100% 100%;
-                    top: 11rem;
-                    left: 6.5rem;
-                }
-                .p27_text4 {
-                    position: absolute;
-                    top: 15.5rem;
-                    left: 5rem;
-                    width: auto;
-                    height: auto;
-                    p {
-                        font-size: 0.7rem;
-                        // font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                    -webkit-transform: rotate(90deg);
-                }
-            }
-            .p27_header2 {
-                position: absolute;
-                left: 9rem;
-                top: 24rem;
-                p {
-                    font-size: 2rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page27_inner {
+            background: url(../images/page27.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page28
     .page28 {
-        .page_inner {
-            .p28_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p28_bg {
-                @include Offset(null, 0, 0, 750, 983);
-                background-image: url(../images/p28_bg.jpg);
-                background-size: 100% 100%;
-            }
-            .p28_text {
-                position: absolute;
-                top: 12rem;
-                left: -3rem;
-                height: auto;
-                width: 20rem;
-                // overflow-y: scroll;
-                p {
-                    font-size: 0.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(2) {
-                    color: rgb(196, 0, 12);
-                    margin-top: 1rem;
-                }
-                p:nth-child(3) {
-                    color: rgb(196, 0, 12);
-                    margin-bottom: 1rem;
-                }
-                p:nth-child(4) {
-                    // color: rgb(196, 0, 12);
-                    margin-bottom: 1rem;
-                }
-                p:nth-child(7) {
-                    // color: rgb(196, 0, 12);
-                    margin-bottom: 1rem;
-                }
-                p:nth-child(10) {
-                    // color: rgb(196, 0, 12);
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page28_inner {
+            background: url(../images/page28.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page29
     .page29 {
-        .page_inner {
-            .p29_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p29_text {
-                position: absolute;
-                top: 10rem;
-                left: -2.5rem;
-                width: 20rem;
-                height: auto;
-                overflow-y: scroll;
-                p {
-                    font-size: 0.8rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(1) {
-                    color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                }
-                p:nth-child(2) {
-                    margin-top: 1rem;
-                }
-                p:nth-child(4) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                p:nth-child(8) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-        }
-    }
-    // page29-2
-    .page29_2 {
-        .page_inner {
-            .p29_2_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p29_2_text {
-                position: absolute;
-                top: 10rem;
-                left: -2.5rem;
-                width: 20rem;
-                height: auto;
-                overflow-y: scroll;
-                p {
-                    font-size: 0.6rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(1) {
-                    color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                }
-                p:nth-child(2) {
-                    margin-top: 1rem;
-                }
-                p:nth-child(4) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                p:nth-child(8) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page29_inner {
+            background: url(../images/page29.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page30
     .page30 {
-        .page_inner {
-            .p30_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p30_text {
-                position: absolute;
-                top: 10rem;
-                left: -2.5rem;
-                width: 20rem;
-                height: auto;
-                overflow-y: scroll;
-                p {
-                    font-size: 0.8rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(1) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                }
-                p:nth-child(2) {
-                    margin-top: 1rem;
-                    // margin-left: 1rem;
-                }
-                p:nth-child(3) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                p:nth-child(4) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 4rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(5) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 4rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(6) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                p:nth-child(7) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 4rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(8) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 4rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(9) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 4rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(10) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 4rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(11) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
-        }
-    }
-    // page30-2
-    .page30_2 {
-        .page_inner {
-            .p30_2_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p30_2_text {
-                position: absolute;
-                top: 10rem;
-                left: -2.5rem;
-                width: 20rem;
-                height: auto;
-                overflow-y: scroll;
-                p {
-                    font-size: 0.6rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                }
-                p:nth-child(1) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                }
-                p:nth-child(2) {
-                    // margin-top: 1rem;
-                    margin-left: 3rem;
-                }
-                p:nth-child(3) {
-                    // color: rgb(196, 0, 12);
-                    // margin-top: 1rem;
-                    margin-left: 3rem;
-                }
-                p:nth-child(4) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(5) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(6) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                p:nth-child(7) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(8) {
-                    color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(9) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(10) {
-                    // color: rgb(196, 0, 12);
-                    margin-left: 3rem;
-                    // margin-top: 1rem;
-                }
-                p:nth-child(11) {
-                    // color: rgb(196, 0, 12);
-                    // margin-left: 1rem;
-                    margin-top: 1rem;
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page30_inner {
+            background: url(../images/page30.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
     // page31
     .page31 {
-        .page_inner {
-            .p31_header {
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 900;
-                    color: rgb(25, 56, 93);
-                    position: absolute;
-                    left: 6rem;
-                    top: 9rem;
-                    -webkit-transform: rotate(90deg);
-                    -webkit-transform-origin-x: 9rem;
-                }
-            }
-            .p31_text {
-                position: absolute;
-                top: 7rem;
-                left: 14rem;
-                .p26_star {
-                    @include Offset(null, 100, null, 118, 102);
-                    background-image: url(../images/p6_star.jpg);
-                    background-size: 100% 100%;
-                }
-                .info {
-                    position: absolute;
-                    top: 3rem;
-                    left: 4rem;
-                    width: 15rem;
-                    height: auto;
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 900;
-                        color: rgb(25, 56, 93);
-                    }
-                }
-                -webkit-transform: rotate(90deg);
-            }
-            .fu_logo {
-                @include Offset(null, null, null, 190, 50);
-                right: 0;
-                background-image: url(../images/fu_logo.jpg);
-                bottom: 2.375rem;
-                background-size: 100% 100%;
-                -webkit-transform: rotate(90deg);
-            }
+        .page31_inner {
+            background: url(../images/page31.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page32
+    .page32 {
+        .page32_inner {
+            background: url(../images/page32.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page33
+    .page33 {
+        .page33_inner {
+            background: url(../images/page33.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page34
+    .page34 {
+        .page34_inner {
+            background: url(../images/page34.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page35
+    .page35 {
+        .page35_inner {
+            background: url(../images/page35.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page36
+    .page36 {
+        .page36_inner {
+            background: url(../images/page36.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page37
+    .page37 {
+        .page37_inner {
+            background: url(../images/page37.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page38
+    .page38 {
+        .page38_inner {
+            background: url(../images/page38.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
+        }
+    }
+    // page39
+    .page39 {
+        .page39_inner {
+            background: url(../images/page39.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #000000;
         }
     }
 }
 
-// #scroller {
-//     position: absolute;
-//     z-index: 1;
-//     // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-//     width: 100%;
-//     height: 3400%;
-//     -webkit-transform: translateZ(0);
-//     -moz-transform: translateZ(0);
-//     -ms-transform: translateZ(0);
-//     -o-transform: translateZ(0);
-//     transform: translateZ(0);
-//     -webkit-touch-callout: none;
-//     -webkit-user-select: none;
-//     -moz-user-select: none;
-//     -ms-user-select: none;
-//     user-select: none;
-//     -webkit-text-size-adjust: none;
-//     -moz-text-size-adjust: none;
-//     -ms-text-size-adjust: none;
-//     -o-text-size-adjust: none;
-//     text-size-adjust: none;
-//     // background-color: #444;
-// }
-// .slide {
-//     position: relative;
-//     display: block;
-//     width: 100%;
-//     height: 2.94117647%;
-//     // height: 100%;
-//     float: left;
-// }
+
 // 自己实现方式
 .scroll-list {
     -webkit-transition: all 0.3s ease-out;
@@ -2483,621 +567,164 @@ html,
     height: 100%;
 }
 
-
 /**************************************************************************************************/
 
 .play {
     // page1
-    .p1_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p1_title {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
+    .page1_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page2
-    .p2_title {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p2_menus {
-        .menu_1 {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .menu_2 {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
-        .menu_3 {
-            -webkit-animation: scaleIn 0.5s linear 1.2s both;
-        }
+    .page2_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page3
-    .p3_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p3_text {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
-    }
-    .p3_2_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p3_2_text {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
+    .page3_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page4 
-    // .p4_header {
-    //     -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    // }
-    .p4_img {
-        -webkit-animation: scaleIn 0.3s linear 0.3s both;
-    }
-    .p4_menu {
-        li:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        li:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.9s both;
-        }
-        li:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 1.2s both;
-        }
-        li:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
+    .page4_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page5 
-    .p5_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p5_text {
-        .star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .text_header {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
-        .text_info {
-            -webkit-animation: scaleIn 0.5s linear 1.2s both;
-        }
-    }
-    .p5_br {
-        -webkit-animation: scaleIn 0.5s linear 1.5s both;
-    }
-    .p5_2_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p5_2_text {
-        .star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .text_header {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
-        .text_info {
-            -webkit-animation: scaleIn 0.5s linear 1.2s both;
-        }
-    }
-    .p5_2_br {
-        -webkit-animation: scaleIn 0.5s linear 1.5s both;
-    }
-    .p5_3_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p5_3_text {
-        .star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .text_header {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
-        .text_info {
-            -webkit-animation: scaleIn 0.5s linear 1.2s both;
-        }
-    }
-    .p5_3_br {
-        -webkit-animation: scaleIn 0.5s linear 1.5s both;
-    }
-    .p5_4_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p5_4_text {
-        .star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .text_header {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
-        .text_info {
-            -webkit-animation: scaleIn 0.5s linear 1.2s both;
-        }
-    }
-    .p5_4_br {
-        -webkit-animation: scaleIn 0.5s linear 1.5s both;
+    .page5_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page6 
-    .p6_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
+    .page6_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page7
-    .p7_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    // .p7_header {
-    //     -webkit-animation: scaleIn 0.5s linear 0.8s both;
-    // }
-    .p7_text {
-        -webkit-animation: scaleIn 0.5s linear 0.8s both;
+    .page7_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page8
-    .p8_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p8_text {
-        -webkit-animation: scaleIn 0.5s linear 0.8s both;
+    .page8_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page9 
-    // .p9_header {
-    //     -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    // }
-    .p9_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p9_text {
-        -webkit-animation: scaleIn 0.5s linear 0.8s both;
+    .page9_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page10
-    .p10_text {
-        .p10_star {
-            -webkit-animation: scaleIn 0.5s linear 0.3s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
+    .page10_inner {
+        -webkit-animation: showAni 0.5s linear 0.3s both;
     }
     // page11 
-    .p11_header {
+    .page11_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p11_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
     }
     // page12
-    .p12_header {
+    .page12_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p12_text {
-        .p12_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
     }
     // page13
-    .p13_bg {
+    .page13_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p13_text {
-        .p13_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            p:nth-child(1) {
-                -webkit-animation: scaleIn 0.3s linear 0.9s both;
-            }
-            p:nth-child(2) {
-                -webkit-animation: scaleIn 0.3s linear 1.2s both;
-            }
-            p:nth-child(3) {
-                -webkit-animation: scaleIn 0.3s linear 1.5s both;
-            }
-        }
     }
     // page14 
-    .p14_header {
+    .page14_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p14_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
-    }
-    .p14_text {
-        -webkit-animation: scaleIn 0.5s linear 0.9s both;
-    }
-    .p14_title {
-        -webkit-animation: scaleIn 0.5s linear 1.2s both;
-    }
-    .p14_text1 {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 2.1s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 2.4s both;
-        }
-    }
-    .p14_text2 {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 2.7s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 3.0s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 3.3s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 3.6s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 3.9s both;
-        }
-        p:nth-child(6) {
-            -webkit-animation: scaleIn 0.3s linear 4.2s both;
-        }
-        p:nth-child(7) {
-            -webkit-animation: scaleIn 0.3s linear 4.5s both;
-        }
-        p:nth-child(8) {
-            -webkit-animation: scaleIn 0.3s linear 4.8s both;
-        }
-        p:nth-child(9) {
-            -webkit-animation: scaleIn 0.3s linear 5.1s both;
-        }
     }
     // page15 
-    .p15_header {
+    .page15_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p15_text {
-        .p15_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
     }
     // page16 
-    .p16_header {
+    .page16_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p16_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
-    }
-    .p16_text {
-        -webkit-animation: scaleIn 0.5s linear 0.9s both;
-    }
-    .p16_title {
-        -webkit-animation: scaleIn 0.5s linear 1.2s both;
-    }
-    .p16_text1 {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 2.1s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 2.4s both;
-        }
-    }
-    .p16_text2 {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 2.7s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 3.0s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 3.3s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 3.6s both;
-        }
     }
     // page17
-    .p17_header {
+    .page17_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p17_text {
-        .p17_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
     }
     // page18 
-    .p18_bg {
+    .page18_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p18_text {
-        p {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
     }
     // page19
-    .p19_header {
+    .page19_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p19_text {
-        .p19_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
     }
     // page20 
-    .p20_header {
+    .page20_inner {
         -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p20_title {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
     }
     // page21 
-    .p21_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p21_text {
-        .p21_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
+    .page21_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page22 
-    .p22_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p22_text {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
+    .page22_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page23 
-    .p23_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p23_text {
-        .p23_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
+    .page23_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page24
-    .p24_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p24_text {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(6) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
+    .page24_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page25 
-    .p25_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p25_text1 {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
-    }
-    .p25_text2 {
-        -webkit-animation: scaleIn 0.5s linear 0.9s both;
-    }
-    .p25_text3 {
-        -webkit-animation: scaleIn 0.5s linear 1.2s both;
-    }
-    .p25_text4 {
-        -webkit-animation: scaleIn 0.5s linear 1.5s both;
-    }
-    .p25_text5 {
-        p {
-            -webkit-animation: scaleIn 0.5s linear 1.8s both;
-        }
+    .page25_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page26 
-    .p26_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p26_text {
-        .p26_star {
-            -webkit-animation: scaleIn 0.5s linear 0.6s both;
-        }
-        .info {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
+    .page26_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page27 
-    .p27_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p27_img1 {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
-    }
-    .p27_text {
-        -webkit-animation: scaleIn 0.3s linear 0.9s both;
-    }
-    .p27_text {
-        .p27_ball1 {
-            -webkit-animation: scaleIn 0.3s linear 1.2s both;
-        }
-        .p27_text1 {
-            p {
-                -webkit-animation: scaleIn 0.3s linear 1.5s both;
-            }
-        }
-        .p27_ball2 {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
-        .p27_text2 {
-            p {
-                -webkit-animation: scaleIn 0.3s linear 2.1s both;
-            }
-        }
-        .p27_ball3 {
-            -webkit-animation: scaleIn 0.3s linear 2.4s both;
-        }
-        .p27_text3 {
-            p {
-                -webkit-animation: scaleIn 0.3s linear 2.7s both;
-            }
-        }
-        .p27_ball4 {
-            -webkit-animation: scaleIn 0.3s linear 3.0s both;
-        }
-        .p27_text4 {
-            p {
-                -webkit-animation: scaleIn 0.3s linear 3.3s both;
-            }
-        }
-    }
-    .p27_header2 {
-        p {
-            -webkit-animation: scaleIn 0.3s linear 3.6s both;
-        }
+    .page27_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page28 
-    .p28_bg {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p28_header {
-        -webkit-animation: scaleIn 0.5s linear 0.6s both;
-    }
-    .p28_text {
-        p {
-            -webkit-animation: scaleIn 0.5s linear 0.9s both;
-        }
+    .page28_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page29 
-    .p29_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p29_text {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.9s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 1.2s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
-    }
-    .p29_2_header {
-        -webkit-animation: scaleIn 0.5s linear 0.3s both;
-    }
-    .p29_2_text {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.9s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 1.2s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
-        p:nth-child(6) {
-            -webkit-animation: scaleIn 0.3s linear 2.1s both;
-        }
-        p:nth-child(7) {
-            -webkit-animation: scaleIn 0.3s linear 2.4s both;
-        }
+    .page29_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
     // page30 
-    .p30_header {
-        -webkit-animation: scaleIn 0.3s linear 0.3s both;
+    .page30_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
-    .p30_text {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.9s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 1.2s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
+    // page31 
+    .page31_inner {
+        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
     }
-    .p30_2_header {
-        -webkit-animation: scaleIn 0.3s linear 0.3s both;
+    // page32 
+    .page32_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
     }
-    .p30_2_text {
-        p:nth-child(1) {
-            -webkit-animation: scaleIn 0.3s linear 0.6s both;
-        }
-        p:nth-child(2) {
-            -webkit-animation: scaleIn 0.3s linear 0.9s both;
-        }
-        p:nth-child(3) {
-            -webkit-animation: scaleIn 0.3s linear 1.2s both;
-        }
-        p:nth-child(4) {
-            -webkit-animation: scaleIn 0.3s linear 1.5s both;
-        }
-        p:nth-child(5) {
-            -webkit-animation: scaleIn 0.3s linear 1.8s both;
-        }
-        p:nth-child(6) {
-            -webkit-animation: scaleIn 0.3s linear 2.1s both;
-        }
+    // page33 
+    .page33_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page34 
+    .page34_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page35 
+    .page35_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page36 
+    .page36_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page37 
+    .page37_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page38 
+    .page38_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page39 
+    .page39_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
     }
 }
 
@@ -3106,6 +733,16 @@ html,
 
 
 /** Animate **/
+@-webkit-keyframes showAni {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
 
 @-webkit-keyframes fadeIn {
     from {
@@ -3178,5 +815,43 @@ html,
     100% {
         -webkit-transform: translate(0, 0.4rem);
         opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 100%, 0);
+    }
+    20% {
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: scale3d(.5, .5, .5) translate3d(0, -20%, 0);
+    }
+    80% {
+        -webkit-transform: scale3d(.8, .8, .8) translate3d(0, -5%, 0);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes roteteIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 100%, 0) rotate(900deg);
+    }
+    20% {
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: scale3d(.5, .5, .5) translate3d(0, -20%, 0) rotate(360deg);
+    }
+    80% {
+        -webkit-transform: scale3d(.8, .8, .8) translate3d(0, -5%, 0) rotate(180deg);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0) rotate(0deg);
     }
 }

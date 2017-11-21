@@ -68,37 +68,18 @@ var music = document.getElementById("music");
 
 //加载图片列表
 var pics = [
-    "./images/landscape_hint@2x.png",
-    "./images/landscape_phone@2x.png",
-    "./images/music_icon.png",
-    "./images/dsz_autograph.jpg",
-    "./images/dsz.jpg",
-    "./images/fh_logo2.png",
-    "./images/fu_logo.jpg",
-    "./images/p1_bg.jpg",
-    "./images/p2_num.png",
-    "./images/p2_star.png",
-    "./images/p4_img.jpg",
-    "./images/p5_img.jpg",
-    "./images/p5_star.jpg",
-    "./images/p6_bg.jpg",
-    "./images/p6_star.jpg",
-    "./images/p7_bg.jpg",
-    "./images/p8_bg.jpg",
-    "./images/p10_bg.jpg",
-    "./images/p12_bg.jpg",
-    "./images/p13_bg.jpg",
-    "./images/p17_bg.jpg",
-    "./images/p18_bg.jpg",
-    "./images/p25_img1.jpg",
-    "./images/p25_img2.jpg",
-    "./images/p25_img3.jpg",
-    "./images/p25_img4.jpg",
-    "./images/p27_img1.jpg",
-    "./images/p27_img2.jpg",
-    "./images/p27_img2.png",
-    "./images/p27_img3.jpg",
-    "./images/p28_bg.jpg",
+    "./images/page1.jpg",
+    "./images/page2.jpg",
+    "./images/page3.jpg",
+    "./images/page4.jpg",
+    "./images/page5.jpg",
+    "./images/page6.jpg",
+    "./images/page7.jpg",
+    "./images/page8.jpg",
+    "./images/page9.jpg",
+    "./images/page10.jpg",
+    "./images/page11.jpg",
+    "./images/page12.jpg",
 ];
 
 function _loadImages(pics, callback, len) {
@@ -162,17 +143,11 @@ function _drawLoadProgress(w) {
 
 //加载完成回调
 _loadImages(pics, function() {
-    // music.play();
-    // $(".music_icon").show();
-
-    // 调用滚动方法
-    // scrollPage();
 
     $(".ld_page").hide();
     $(".scroll-list").show();
 
     $(".btn_down").show();
-    // $(".btn_up").show();
 });
 
 /** 滚动页面 **/
@@ -180,12 +155,6 @@ _loadImages(pics, function() {
 function scrollPage() {
 
     var myScroll;
-    // myScroll = new IScroll('#wrapper', {
-    //     scrollX: true,
-    //     scrollY: true,
-    //     momentum: false,
-    //     snap: true
-    // });
 
     myScroll = new IScroll("#wrapper", {
         mouseWheel: true,
@@ -205,13 +174,6 @@ function scrollPage() {
         capture: false,
         passive: false
     } : false);
-
-    // $(".btn_right").on('click', function() {
-    //     myScroll.next();
-    // })
-    // $(".btn_left").on('click', function() {
-    //     myScroll.prev();
-    // })
 }
 
 /*=============================================================================*/
@@ -237,7 +199,7 @@ function pageShow(ind) {
     if (cache.ind == 0) {
         $(".btn_up").hide();
         // $(".btn_down").show();
-    } else if (cache.ind == 36) {
+    } else if (cache.ind == 38) {
         // $(".btn_up").show();
         $(".btn_down").hide();
     } else {
@@ -257,16 +219,6 @@ $("html").touchwipe({
 
                 var n = $(".scroll-list .slide").index($(".slide .play"));
                 console.log(n, cache.ind);
-                // if (cache.ind == 0) {
-                //     $(".btn_up").hide();
-                //     // $(".btn_down").show();
-                // } else if (cache.ind == 36) {
-                //     // $(".btn_up").show();
-                //     $(".btn_down").hide();
-                // } else {
-                //     // $(".btn_up").show();
-                //     $(".btn_down").show();
-                // }
             } else {
                 console.log("不滚动");
             }
@@ -282,17 +234,6 @@ $("html").touchwipe({
 
                 var n = $(".scroll-list .slide").index($(".slide .play"));
                 console.log(n, cache.ind);
-
-                // if (cache.ind == 0) {
-                //     $(".btn_up").hide();
-                //     $(".btn_down").show();
-                // } else if (cache.ind == 36) {
-                //     $(".btn_up").show();
-                //     $(".btn_down").hide();
-                // } else {
-                //     $(".btn_up").show();
-                //     $(".btn_down").show();
-                // }
             } else {
                 console.log("不滚动");
             }
@@ -303,30 +244,6 @@ $("html").touchwipe({
 });
 
 /*=============================================================================*/
-
-//音频
-// $(".music_icon").on("click", function() {
-//     if ($(this).hasClass("mute")) {
-//         music.play();
-//         $(this).removeClass("mute");
-
-//     } else {
-//         music.pause();
-//         $(this).addClass("mute");
-//     }
-// });
-
-// $("html").touchwipe({
-//     wipeUp: function() {
-//         wipeUp();
-//     },
-//     wipeDown: function() {
-//         wipeDown();
-//     },
-//     min_move_x: 80,
-//     min_move_y: 80
-// });
-
 
 //向上滑动
 function wipeUp() {
