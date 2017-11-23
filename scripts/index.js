@@ -198,14 +198,17 @@ function pageShow(ind) {
     cache.mod.removeClass("play").eq(ind).addClass("play");
     if (cache.ind == 0) {
         $(".btn_up").hide();
-        // $(".btn_down").show();
-    } else if (cache.ind == 38) {
-        // $(".btn_up").show();
-        $(".btn_down").hide();
-    } else {
-        $(".btn_up").show();
         $(".btn_down").show();
-    }
+    } else if (cache.ind == 36) {
+        $(".btn_up").show();
+        $(".btn_down").hide();
+    } else if (cache.ind == 1 || cache.ind == 35) {
+        $(".btn_down").show();
+        $(".btn_up").show();
+    } else {
+        $(".btn_up").hide();
+        $(".btn_down").hide();
+    } 
 }
 
 $("html").touchwipe({

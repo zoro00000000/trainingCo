@@ -485,6 +485,7 @@ html,
   width: 2rem;
   height: 2rem;
   font-size: 1.6rem;
+  color: #757373;
   -webkit-animation: ani_turn1 1.2s linear 0s infinite alternate;
 }
 
@@ -496,6 +497,7 @@ html,
   width: 2rem;
   height: 2rem;
   font-size: 1.6rem;
+  color: #757373;
   -webkit-animation: ani_turn2 1.2s linear 0s infinite alternate;
 }
 
@@ -632,7 +634,7 @@ html,
 }
 
 .scroll-list .page12 .page12_inner {
-  background: url(../images/page12.jpg) no-repeat;
+  background: url(../images/page12_1.jpg) no-repeat;
   background-size: 100% 100%;
   box-sizing: border-box;
   width: 100%;
