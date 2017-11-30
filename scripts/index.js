@@ -199,10 +199,10 @@ function pageShow(ind) {
     if (cache.ind == 0) {
         $(".btn_up").hide();
         $(".btn_down").show();
-    } else if (cache.ind == 36) {
+    } else if (cache.ind == 41) {
         $(".btn_up").show();
         $(".btn_down").hide();
-    } else if (cache.ind == 1 || cache.ind == 35) {
+    } else if (cache.ind == 1 || cache.ind == 40) {
         $(".btn_down").show();
         $(".btn_up").show();
     } else {

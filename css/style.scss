@@ -259,7 +259,7 @@ html,
     // page 12
     .page12 {
         .page12_inner {
-            background: url(../images/page12_1.jpg) no-repeat;
+            background: url(../images/page12.jpg) no-repeat;
             background-size: 100% 100%;
             box-sizing: border-box;
             width: 100%;
@@ -564,6 +564,28 @@ html,
             // border: 2px solid #000000;
         }
     }
+    // page40
+    .page40 {
+        .page40_inner {
+            background: url(../images/page40.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            // border: 2px solid #000000;
+        }
+    }
+    // page41
+    .page41 {
+        .page41_inner {
+            background: url(../images/page41.jpg) no-repeat;
+            background-size: 100% 100%;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            // border: 2px solid #000000;
+        }
+    }
 }
 
 
@@ -702,7 +724,7 @@ html,
     }
     // page31 
     .page31_inner {
-        -webkit-animation: fadeInRight 0.5s linear 0.3s both;
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
     }
     // page32 
     .page32_inner {
@@ -734,6 +756,14 @@ html,
     }
     // page39 
     .page39_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page40 
+    .page40_inner {
+        -webkit-animation: roteteIn 0.5s linear 0.3s both;
+    }
+    // page41 
+    .page41_inner {
         -webkit-animation: roteteIn 0.5s linear 0.3s both;
     }
 }
